@@ -1,0 +1,9 @@
+{
+  "collectionName": "components_shipment_order_etas",
+  "info": {
+    "name": "eta",
+    "icon": "user-clock"
+  },
+  "options": {},
+  "attributes": {}
+}

@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "name": "order",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "privateAttributes": [
+      "created_by, updated_by, createdAt, updatedAt, __v"
+    ],
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "orderId": {
+      "type": "string"
+    },
+    "customer": {
+      "model": "customer"
+    },
+    "products": {
+      "collection": "product",
+      "via": "order"
+    },
+    "date": {
+      "type": "date"
+    },
+    "remarks": {
+      "type": "string"
+    },
+    "shipmentId": {
+      "type": "string"
+    },
+    "deliveryId": {
+      "type": "string",
+      "unique": false
+    },
+    "productDetails": {
+      "type": "json"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "open",
+        "assigned"
+      ],
+      "default": "open"
+    },
+    "shippingPoint": {
+      "type": "string"
+    },
+    "sapLineItem": {
+      "type": "string"
+    },
+    "deliveryNo": {
+      "type": "uid",
+      "targetField": "deliveryId"
+    },
+    "addRemarks": {
+      "type": "string"
+    }
+  }
+}

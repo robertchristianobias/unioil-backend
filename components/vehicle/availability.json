@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_vehicle_availabilities",
+  "info": {
+    "name": "availability",
+    "icon": "bus",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "vehicle": {
+      "model": "vehicle"
+    },
+    "availability": {
+      "type": "enumeration",
+      "enum": [
+        "available",
+        "notAvailable",
+        "phasedOut",
+        "spare"
+      ],
+      "default": "available"
+    }
+  }
+}

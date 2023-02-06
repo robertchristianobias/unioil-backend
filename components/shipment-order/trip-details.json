@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_shipment_order_trip_details",
+  "info": {
+    "name": "tripDetails",
+    "icon": "shipping-fast",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "order": {
+      "model": "order"
+    },
+    "trip": {
+      "type": "string"
+    },
+    "drop": {
+      "type": "string"
+    },
+    "logInTime": {
+      "type": "datetime"
+    },
+    "timeFinishedLoading": {
+      "type": "datetime"
+    },
+    "timeLeftDepot": {
+      "type": "datetime"
+    },
+    "timeArrivedAtCustomer": {
+      "type": "datetime"
+    },
+    "timeDepartedFromCustomer": {
+      "type": "datetime"
+    },
+    "timeReturnToDepot": {
+      "type": "datetime"
+    }
+  }
+}

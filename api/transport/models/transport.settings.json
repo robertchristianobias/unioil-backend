@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "transports",
+  "info": {
+    "name": "transport",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "date": {
+      "type": "date"
+    },
+    "vehicle": {
+      "type": "component",
+      "repeatable": true,
+      "component": "vehicle.availability"
+    }
+  }
+}

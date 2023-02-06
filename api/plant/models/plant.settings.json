@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "plants",
+  "info": {
+    "name": "plant",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "privateAttributes": [
+      "created_by, updated_by, createdAt, updatedAt, __v"
+    ],
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "plantName": {
+      "type": "string"
+    },
+    "address1": {
+      "type": "string"
+    },
+    "address2": {
+      "type": "string"
+    },
+    "remarks": {
+      "type": "string"
+    },
+    "plantCode": {
+      "type": "string"
+    },
+    "ttpCode": {
+      "type": "string"
+    },
+    "long_coord": {
+      "type": "float"
+    },
+    "lat_coord": {
+      "type": "float"
+    }
+  }
+}

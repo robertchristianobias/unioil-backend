@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rates",
+  "info": {
+    "name": "rate"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "privateAttributes": [
+      "created_by, updated_by, createdAt, updatedAt, __v"
+    ],
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "rateCode": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "destination": {
+      "type": "string"
+    },
+    "km": {
+      "type": "integer"
+    },
+    "rates": {
+      "type": "decimal"
+    }
+  }
+}

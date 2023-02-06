@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_vehicle_vehicle_availabilities",
+  "info": {
+    "name": "vehicleAvailability",
+    "icon": "bus-alt"
+  },
+  "options": {},
+  "attributes": {
+    "date": {
+      "type": "date"
+    },
+    "isAvailable": {
+      "type": "boolean"
+    },
+    "shift": {
+      "type": "enumeration",
+      "enum": [
+        "single",
+        "double"
+      ]
+    },
+    "start": {
+      "type": "time"
+    },
+    "end": {
+      "type": "time"
+    },
+    "unavailableReason": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/driver-availabilities",
+      "handler": "driver-availability.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/driver-availabilities/count",
+      "handler": "driver-availability.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/driver-availabilities/:id",
+      "handler": "driver-availability.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/driverFindSchedule",
+      "handler": "driver-availability.driverFindSchedule",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/driver-availabilities",
+      "handler": "driver-availability.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/driver-availabilities/:id",
+      "handler": "driver-availability.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/driver-availabilities/:id",
+      "handler": "driver-availability.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

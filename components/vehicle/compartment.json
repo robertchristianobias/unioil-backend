@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_vehicle_compartments",
+  "info": {
+    "name": "compartment",
+    "icon": "boxes",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "order": {
+      "model": "order"
+    },
+    "productShortDescription": {
+      "type": "string"
+    },
+    "orderVolume": {
+      "type": "integer"
+    },
+    "drop": {
+      "type": "integer"
+    },
+    "vehicleVolumeCap": {
+      "type": "integer"
+    }
+  }
+}

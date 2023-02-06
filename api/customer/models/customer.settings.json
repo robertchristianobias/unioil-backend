@@ -1,0 +1,90 @@
+{
+  "kind": "collectionType",
+  "collectionName": "customers",
+  "info": {
+    "name": "customer",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "privateAttributes": [
+      "created_by, updated_by, createdAt, updatedAt, __v"
+    ],
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "customerName1": {
+      "type": "string"
+    },
+    "customerName2": {
+      "type": "string"
+    },
+    "street": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "province": {
+      "type": "string"
+    },
+    "postalCode": {
+      "type": "integer",
+      "min": 4
+    },
+    "zone": {
+      "type": "integer"
+    },
+    "district": {
+      "type": "string"
+    },
+    "deliveryMode": {
+      "type": "string"
+    },
+    "contactPerson1": {
+      "type": "string"
+    },
+    "contactNum1": {
+      "type": "string"
+    },
+    "contactPerson2": {
+      "type": "string"
+    },
+    "contactNum2": {
+      "type": "string"
+    },
+    "contactPerson3": {
+      "type": "string"
+    },
+    "contactNum3": {
+      "type": "string"
+    },
+    "remarks": {
+      "type": "string"
+    },
+    "customerCode": {
+      "type": "string"
+    },
+    "alias": {
+      "type": "string"
+    },
+    "lat": {
+      "type": "string"
+    },
+    "long": {
+      "type": "string"
+    },
+    "mediaFile": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

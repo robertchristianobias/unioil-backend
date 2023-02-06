@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contractors",
+  "info": {
+    "name": "contractor",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "privateAttributes": [
+      "created_by, updated_by, createdAt, updatedAt, __v"
+    ],
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "contractorName": {
+      "type": "string"
+    },
+    "contractorCode": {
+      "type": "string"
+    },
+    "remarks": {
+      "type": "string"
+    },
+    "drivers": {
+      "via": "contractor",
+      "collection": "driver"
+    },
+    "vehicles": {
+      "via": "contractor",
+      "collection": "vehicle"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "deliveryRemarks": {
+      "type": "string"
+    }
+  }
+}

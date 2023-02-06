@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shipments",
+  "info": {
+    "name": "shipment"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "privateAttributes": [
+      "created_by, updated_by, createdAt, updatedAt, __v"
+    ],
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "shipmentId": {
+      "type": "string"
+    }
+  }
+}

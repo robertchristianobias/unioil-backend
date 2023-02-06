@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "drivers",
+  "info": {
+    "name": "driver",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "privateAttributes": [
+      "created_by, updated_by, createdAt, updatedAt, __v"
+    ],
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "driverLastName": {
+      "type": "string"
+    },
+    "driverFirstName": {
+      "type": "string"
+    },
+    "driverCode": {
+      "type": "string"
+    },
+    "contractor": {
+      "model": "contractor",
+      "via": "drivers"
+    },
+    "remarks": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "zones",
+  "info": {
+    "name": "zone"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "privateAttributes": [
+      "created_by, updated_by, createdAt, updatedAt, __v"
+    ],
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "zoneName": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "province": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_shipment_order_eta_changes",
+  "info": {
+    "name": "ETA Change",
+    "icon": "clock",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "etaChangeDate": {
+      "type": "datetime"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "reasonForChange": {
+      "type": "enumeration",
+      "enum": [
+        "initialETA",
+        "customerInitiated",
+        "delayedFromLastTrip"
+      ]
+    }
+  }
+}

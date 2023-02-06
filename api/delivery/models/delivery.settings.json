@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "deliveries",
+  "info": {
+    "name": "delivery",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "privateAttributes": [
+      "created_by, updated_by, createdAt, updatedAt, __v"
+    ],
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "deliveryId": {
+      "type": "string"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "assigned",
+        "queueing",
+        "loading",
+        "on_the_way",
+        "arrive_at_customer",
+        "start_of_discharge",
+        "end_of_discharge",
+        "returning_to_plant",
+        "arrived_at_plant"
+      ],
+      "default": "assigned"
+    },
+    "vehicle": {
+      "model": "vehicle"
+    },
+    "tripDetails": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shipment-order.trip-details"
+    },
+    "etaChange": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shipment-order.eta-change"
+    },
+    "driver": {
+      "model": "driver"
+    },
+    "remarks": {
+      "type": "string"
+    },
+    "compartmentDetails": {
+      "type": "component",
+      "repeatable": true,
+      "component": "vehicle.compartment"
+    }
+  }
+}

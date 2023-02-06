@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "name": "product"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "privateAttributes": [
+      "created_by, updated_by, createdAt, updatedAt, __v"
+    ],
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "productCode": {
+      "type": "string"
+    },
+    "productDescription": {
+      "type": "string"
+    },
+    "productGroup": {
+      "type": "string"
+    },
+    "shortDescription": {
+      "type": "string"
+    },
+    "remarks": {
+      "type": "string"
+    },
+    "order": {
+      "via": "products",
+      "model": "order"
+    }
+  }
+}

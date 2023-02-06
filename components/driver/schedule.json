@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_driver_schedules",
+  "info": {
+    "name": "scheduleDetail",
+    "icon": "bars",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "dutyType": {
+      "type": "enumeration",
+      "enum": [
+        "onDuty",
+        "offDuty"
+      ],
+      "default": "onDuty"
+    },
+    "workingHoursStart": {
+      "type": "time"
+    },
+    "shiftRestHours": {
+      "type": "integer"
+    },
+    "drivingHours": {
+      "type": "integer"
+    },
+    "afterDutyRest": {
+      "type": "time"
+    },
+    "excessWorkingHourReason": {
+      "type": "string"
+    },
+    "workingHoursEnd": {
+      "type": "time"
+    },
+    "driver": {
+      "model": "driver"
+    }
+  }
+}

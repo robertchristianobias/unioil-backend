@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shipment_order_products",
+  "info": {
+    "name": "product",
+    "icon": "clipboard-list",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "products": {
+      "collection": "product"
+    },
+    "volume": {
+      "type": "integer"
+    }
+  }
+}

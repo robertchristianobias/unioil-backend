@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "driver_availabilities",
+  "info": {
+    "name": "driverAvailability",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "date": {
+      "type": "date"
+    },
+    "schedule": {
+      "type": "component",
+      "repeatable": true,
+      "component": "driver.schedule"
+    }
+  }
+}

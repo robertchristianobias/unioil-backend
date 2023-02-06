@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_shipment_order_mochas",
+  "info": {
+    "name": "mocha",
+    "icon": "truck"
+  },
+  "options": {},
+  "attributes": {
+    "compartmentNo": {
+      "type": "integer"
+    },
+    "compartmentCapacity": {
+      "type": "integer"
+    },
+    "productName": {
+      "type": "string"
+    },
+    "productVolume": {
+      "type": "integer"
+    }
+  }
+}

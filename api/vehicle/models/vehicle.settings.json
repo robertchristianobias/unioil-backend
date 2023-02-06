@@ -1,0 +1,103 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vehicles",
+  "info": {
+    "name": "vehicle",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "tractorPlate": {
+      "type": "string"
+    },
+    "trailerPlate": {
+      "type": "string"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "containerName": {
+      "type": "string"
+    },
+    "plant": {
+      "type": "string"
+    },
+    "compartmentCapacity1": {
+      "type": "integer"
+    },
+    "compartmentCapacity2": {
+      "type": "integer"
+    },
+    "compartmentCapacity3": {
+      "type": "integer"
+    },
+    "compartmentCapacity4": {
+      "type": "integer"
+    },
+    "compartmentCapacity5": {
+      "type": "integer"
+    },
+    "compartmentCapacity6": {
+      "type": "integer"
+    },
+    "compartmentCapacity7": {
+      "type": "integer"
+    },
+    "compartmentCapacity8": {
+      "type": "integer"
+    },
+    "compartmentCapacity9": {
+      "type": "integer"
+    },
+    "compartmentCapacity10": {
+      "type": "integer"
+    },
+    "totalCapacity": {
+      "type": "integer"
+    },
+    "gpsEquip": {
+      "type": "boolean"
+    },
+    "pumpAvail": {
+      "type": "boolean"
+    },
+    "isAvailable": {
+      "type": "boolean"
+    },
+    "fleetStatus": {
+      "type": "enumeration",
+      "enum": [
+        "good",
+        "preventiveMaintenance"
+      ]
+    },
+    "remarks": {
+      "type": "string"
+    },
+    "deadFreightVol": {
+      "type": "biginteger"
+    },
+    "description": {
+      "type": "string"
+    },
+    "contractor": {
+      "model": "contractor",
+      "via": "vehicles"
+    },
+    "suppl1": {
+      "type": "string"
+    },
+    "comparmentCapacity": {
+      "type": "json"
+    },
+    "vehicleAvailability": {
+      "type": "component",
+      "repeatable": true,
+      "component": "vehicle.vehicle-availability"
+    }
+  }
+}
